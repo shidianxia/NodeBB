@@ -1,12 +1,12 @@
 
 <div class="categories">
-	<h1><i class="fa fa-folder"></i> Categories</h1>
+	<h1><i class="fa fa-folder"></i> 节点</h1>
 	<hr />
 
 	<ul class="nav nav-pills">
-		<li class='active'><a href='/admin/categories/active'>Active</a></li>
-		<li class=''><a href='/admin/categories/disabled'>Disabled</a></li>
-		<li class=''><a href='/admin/testing/categories'>Unit Tests</a></li>
+		<li class='active'><a href='/admin/categories/active'>启用中</a></li>
+		<li class=''><a href='/admin/categories/disabled'>已禁用</a></li>
+		<li class=''><a href='/admin/testing/categories'>单元测试</a></li>
 	</ul>
 
 	<div class="row admin-categories">
@@ -21,7 +21,7 @@
 							</div>
 						</div><br />
 						<!-- IF categories.image -->
-						<small class="pointer delete-image"><i data-name="icon" value="fa-times" class="fa fa-times"></i> Delete Image</small>
+						<small class="pointer delete-image"><i data-name="icon" value="fa-times" class="fa fa-times"></i> 删除图片</small>
 						<!-- ENDIF categories.image -->
 					</div>
 					<div class="col-sm-10">
@@ -29,14 +29,14 @@
 							<div class="row">
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
-										<label for="cid-{categories.cid}-name">Category Name</label>
-										<input id="cid-{categories.cid}-name" type="text" class="form-control" placeholder="Category Name" data-name="name" value="{categories.name}" />
+										<label for="cid-{categories.cid}-name">节点名称</label>
+										<input id="cid-{categories.cid}-name" type="text" class="form-control" placeholder="输入节点名称" data-name="name" value="{categories.name}" />
 									</div>
 								</div>
 								<div class="col-sm-4 hidden-xs">
 									<div class="form-group">
 										<div class="form-group">
-											<label for="cid-{categories.cid}-bgColor">Background Colour</label>
+											<label for="cid-{categories.cid}-bgColor">背景色</label>
 											<input id="cid-{categories.cid}-bgColor" placeholder="#0059b2" data-name="bgColor" value="{categories.bgColor}" class="form-control category_bgColor" />
 										</div>
 									</div>
@@ -44,7 +44,7 @@
 								<div class="col-sm-4 hidden-xs">
 									<div class="form-group">
 										<div class="form-group">
-											<label for="cid-{categories.cid}-color">Text Colour</label>
+											<label for="cid-{categories.cid}-color">文字颜色</label>
 											<input id="cid-{categories.cid}-color" placeholder="#fff" data-name="color" value="{categories.color}" class="form-control category_color" />
 										</div>
 									</div>
@@ -54,8 +54,8 @@
 								<div class="col-md-8 col-sm-6">
 									<div class="form-group">
 										<div class="form-group">
-											<label for="cid-{categories.cid}-description">Description</label>
-											<input id="cid-{categories.cid}-description" data-name="description" placeholder="Category Description" value="{categories.description}" class="form-control category_description description"></input>
+											<label for="cid-{categories.cid}-description">描述</label>
+											<input id="cid-{categories.cid}-description" data-name="description" placeholder="输入节点描述" value="{categories.description}" class="form-control category_description description"></input>
 										</div>
 									</div>
 								</div>
@@ -64,13 +64,13 @@
 										<div class="form-group">
 											<label>&nbsp;</label>
 											<div class="dropdown">
-												<button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-cogs"></i> Options</button>
+												<button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-cogs"></i> 选项</button>
 												<ul class="dropdown-menu" role="menu">
-													<li class="permissions"><a href="#"><i class="fa fa-ban"></i> Access Control</a></li>
+													<li class="permissions"><a href="#"><i class="fa fa-ban"></i> 访问权限</a></li>
 													<hr />
 													<li data-disabled="{categories.disabled}"><a href="#"></a></li>
 												</ul>
-												<button type="button" data-name="image" data-value="{categories.image}" class="btn btn-default upload-button"><i class="fa fa-upload"></i> Image</button>
+												<button type="button" data-name="image" data-value="{categories.image}" class="btn btn-default upload-button"><i class="fa fa-upload"></i> 图片</button>
 											</div>
 										</div>
 									</div>
@@ -79,19 +79,19 @@
 							<div class="row">
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
-										<label for="cid-{categories.cid}-class">Custom Class</label>
+										<label for="cid-{categories.cid}-class">自定义样式 Class</label>
 										<input id="cid-{categories.cid}-class" type="text" class="form-control" placeholder="col-md-6 col-xs-6" data-name="class" value="{categories.class}" />
 									</div>
 								</div>
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
-										<label for="cid-{categories.cid}-numRecentReplies"># of Recent Replies Displayed</label>
+										<label for="cid-{categories.cid}-numRecentReplies"># 显示最近回复的数量</label>
 										<input id="cid-{categories.cid}-numRecentReplies" type="text" class="form-control" placeholder="2" data-name="numRecentReplies" value="{categories.numRecentReplies}" />
 									</div>
 								</div>
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
-										<label for="cid-{categories.cid}-link">Is Link (if set, category acts as external link)</label>
+										<label for="cid-{categories.cid}-link">链接（如果此节点是链接到外部地址）</label>
 										<input id="cid-{categories.cid}-link" type="text" class="form-control" placeholder="http://domain.com" data-name="link" value="{categories.link}" />
 									</div>
 								</div>
@@ -107,8 +107,8 @@
 		<!-- END categories -->
 		</ul>
 
-		<button class="btn btn-lg btn-primary" id="save">Save</button>
-		<button class="btn btn-lg btn-primary" id="addNew">Add New</button>
+		<button class="btn btn-lg btn-primary" id="save">保存</button>
+		<button class="btn btn-lg btn-primary" id="addNew">新增</button>
 	</div>
 
 	<div id="new-category-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="Add New Modal" aria-hidden="true">
@@ -116,27 +116,27 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3>Create New Category</h3>
+					<h3>新增节点</h3>
 				</div>
 				<div class="modal-body">
 					<div>
 						<form class='form-horizontal'>
 							<div class="control-group">
-								<label class="control-label" for="inputName">Name</label>
+								<label class="control-label" for="inputName">节点名称</label>
 								<div class="controls">
-									<input class="form-control" type="text" id="inputName" placeholder="Name" value="">
+									<input class="form-control" type="text" id="inputName" placeholder="节点名称" value="">
 								</div>
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="inputDescription">Description</label>
+								<label class="control-label" for="inputDescription">描述</label>
 								<div class="controls">
-									<input class="form-control" type="text" id="inputDescription" placeholder="Description" value="">
+									<input class="form-control" type="text" id="inputDescription" placeholder="节点描述" value="">
 								</div>
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="inputIcon">Icon</label>
+								<label class="control-label" for="inputIcon">图标</label>
 								<div class="controls">
 									<div class="icon">
 										<i data-name="icon" value="fa-pencil" class="fa fa-pencil fa-2x"></i>
@@ -147,7 +147,7 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" id="create-category-btn" href="#" class="btn btn-primary btn-lg btn-block">Create</button>
+					<button type="button" id="create-category-btn" href="#" class="btn btn-primary btn-lg btn-block">创建</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -158,19 +158,19 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3>Category Permissions</h3>
+					<h3>节点权限</h3>
 				</div>
 				<div class="modal-body">
-					<p>The following users can read Topics in this Category</p>
+					<p>以下用户为此节点的只读用户</p>
 					<ul class="members" id="category-permissions-read"></ul>
 
-					<p>The following users can post and reply to Topics in this Category</p>
+					<p>以下用户可阅读和发布帖子</p>
 					<ul class="members" id="category-permissions-write"></ul>
 
 					<hr />
 					<form role="form">
 						<div class="form-group">
-							<label for="permission-search">User Search</label>
+							<label for="permission-search">用户搜索</label>
 							<input class="form-control" type="text" id="permission-search" />
 						</div>
 					</form>
@@ -179,7 +179,7 @@
 					<hr />
 					<form role="form">
 						<div class="form-group">
-							<label for="permission-group-pick">User Groups</label>
+							<label for="permission-group-pick">用户组</label>
 						</div>
 					</form>
 					<table class="table table-striped groups-results"></table>

@@ -1,5 +1,5 @@
 		<ol class="breadcrumb">
-			<li><a href="/">Home</a></li>
+			<li><a href="/">首页</a></li>
 			<li class="active">{category_name}</li>
 		</ol>
 		<ul class="topics">

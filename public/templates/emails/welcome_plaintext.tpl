@@ -1,11 +1,11 @@
-Hello {username},
+您好 {username},
 
-Thank you for registering with {site_title}!
+感谢您注册 {site_title}!
 
-To fully activate your account, we need to verify that you own the email address you registered with. Please click on the following link:
-
+欢迎加入 {site_title}，还差一步就能完整地使用本站的全部功能，请点击此链接完成注册确认：
     {confirm_link}
 
 
-Thanks!
-{site_title}
+感谢您的配合！
+
+{site_title} 敬上。

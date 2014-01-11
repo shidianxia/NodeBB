@@ -1,5 +1,5 @@
 <ol class="breadcrumb">
-	<li><a href="{relative_path}/">Home</a></li>
+	<li><a href="{relative_path}/">首页</a></li>
 	<li class="active">Recent <a href="{relative_path}/recent.rss"><i class="fa fa-rss-square"></i></a></li>
 </ol>
 
@@ -16,7 +16,7 @@
 </a>
 
 <div class="alert alert-warning hide {no_topics_message}" id="category-no-topics">
-	<strong>There are no recent topics.</strong>
+	<strong>最近没有话题。</strong>
 </div>
 
 <div class="category row">
@@ -55,13 +55,13 @@
 
 						<span class="pull-right hidden-xs">
 							<!-- IF topics.unreplied -->
-							No one has replied
+							还没有人回复，上个头香吧！
 							<!-- ELSE -->
 							<a href="{relative_path}/user/{topics.teaser_userslug}">
 								<img class="teaser-pic" src="{topics.teaser_userpicture}" title="{topics.teaser_username}"/>
 							</a>
 							<a href="{relative_path}/topic/{topics.slug}#{topics.teaser_pid}">
-								replied
+								已回复
 							</a>
 							<span class="timeago" title="{topics.teaser_timestamp}"></span>
 							<!-- ENDIF topics.unreplied -->

@@ -23,8 +23,8 @@
 					<a id="uploadPictureBtn" href="#">[[user:upload_new_picture]]</a>
 				</div>
 				<div class="modal-footer">
-					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
-					<button id="savePictureChangesBtn" class="btn btn-primary">Save changes</button>
+					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+					<button id="savePictureChangesBtn" class="btn btn-primary">保存</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -116,16 +116,16 @@
 			<div style="vertical-align:top;">
 				<form class='form-horizontal'>
 					<div class="control-group">
-						<label class="control-label" for="inputCurrentPassword">Current Password</label>
+						<label class="control-label" for="inputCurrentPassword">当前密码</label>
 						<div class="controls">
-							<input class="form-control" type="password" id="inputCurrentPassword" placeholder="Current Password" value="">
+							<input class="form-control" type="password" id="inputCurrentPassword" placeholder="当前密码" value="">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputNewPassword">[[user:password]]</label>
 						<div class="input-group">
-							<input class="form-control" type="password" id="inputNewPassword" placeholder="New Password" value="">
+							<input class="form-control" type="password" id="inputNewPassword" placeholder="新密码" value="">
 							<span class="input-group-addon">
 								<span id="password-notify"><i class="fa fa-circle-o"></i></span>
 							</span>
@@ -135,7 +135,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputNewPasswordAgain">[[user:confirm_password]]</label>
 						<div class="input-group">
-							<input class="form-control" type="password" id="inputNewPasswordAgain" placeholder="Confirm Password" value="">
+							<input class="form-control" type="password" id="inputNewPasswordAgain" placeholder="确认新密码" value="">
 							<span class="input-group-addon">
 								<span id="password-confirm-notify"><i class="fa fa-circle-o"></i></span>
 							</span>

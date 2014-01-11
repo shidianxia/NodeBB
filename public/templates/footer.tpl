@@ -31,7 +31,7 @@
 					<div id="alert-error" class="alert alert-danger hide"></div>
 				</div>
 				<div class="modal-footer">
-					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
 					<button id="pictureUploadSubmitBtn" class="btn btn-primary">[[user:upload_picture]]</button>
 				</div>
 			</div><!-- /.modal-content -->
@@ -44,7 +44,7 @@
 	<footer id="footer" class="container footer hide">
 		{footerHTML}
 		<div class="copyright">
-			Copyright &copy; 2013 <a target="_blank" href="https://www.nodebb.com">NodeBB Forums</a> | <a target="_blank" href="//github.com/designcreateplay/NodeBB/graphs/contributors">Contributors</a>
+			Copyright &copy; 2014 为一些不同的人群留下一片净土 <a target="_blank" href="//github.com/designcreateplay/NodeBB/graphs/contributors">本站基于 NodeBB 开发</a>
 		</div>
 	</footer>
 

@@ -30,7 +30,7 @@
 	</script>
 
 	<!-- TODO : this has to be refactored, maybe configured from ACP? -baris -->
-	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="//lib.sinaapp.com/js/jquery-ui/1.10.2/themes/smoothness/jquery-ui.min.css">
 </head>
 
 <body>
@@ -86,7 +86,7 @@
 
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right hide">
 					<li>
-						<a href="#" id="reconnect" class="hide" title="Connection to {title} has been lost, attempting to reconnect..."><i class="fa fa-check"></i></a>
+						<a href="#" id="reconnect" class="hide" title="{title} 链接丢失，尝试重新连接"><i class="fa fa-check"></i></a>
 					</li>
 
 					<li class="notifications dropdown text-center hidden-xs">
@@ -150,7 +150,7 @@
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET" action="">
 							<div class="hide" id="search-fields">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Search" name="query" value="">
+									<input type="text" class="form-control" placeholder="搜索" name="query" value="">
 								</div>
 								<button type="submit" class="btn btn-default hide">[[global:search]]</button>
 							</div>

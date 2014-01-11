@@ -7,14 +7,14 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 id="myModalLabel">Upload Picture</h3>
+					<h3 id="myModalLabel">上传图片</h3>
 				</div>
 				<div class="modal-body">
 					<form id="uploadForm" action="" method="post" enctype="multipart/form-data">
 						<div class="form-group">
-							<label for="userPhoto">Upload a picture</label>
+							<label for="userPhoto">上传一张图片</label>
 							<input type="file" id="userPhotoInput"  name="userPhoto">
-							<p class="help-block">You may only upload PNG, JPG, or GIF files under 256kb.</p>
+							<p class="help-block">您可以上传小于256kb的PNG、JPG、GIF格式图片。</p>
 						</div>
 						<input id="imageUploadCsrf" type="hidden" name="_csrf" value="" />
 						<input type="hidden" id="params" name="params">
@@ -22,7 +22,7 @@
 
 					<div id="upload-progress-box" class="progress progress-striped">
 						<div id="upload-progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0">
-							<span class="sr-only"> success</span>
+							<span class="sr-only"> 成功</span>
 						</div>
 					</div>
 
@@ -32,7 +32,7 @@
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
-					<button id="pictureUploadSubmitBtn" class="btn btn-primary">Upload Picture</button>
+					<button id="pictureUploadSubmitBtn" class="btn btn-primary">上传图片</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->

@@ -1,0 +1,51 @@
+{
+	"topic": "话题",
+	"topics": "话题",
+
+	"no_topics_found": "未找到话题",
+
+	"profile": "个人页面",
+	"posted_by": "发布者",
+	"chat": "聊天",
+	"notify_me": "如果话题有新回复提醒我",
+	"quote": "引用",
+	"reply": "回复",
+	"edit": "编辑",
+	"delete": "删除",
+	"move": "移动",
+	"fork": "建立话题分支",
+	"banned": "已禁止",
+	"link": "链接",
+
+	"thread_tools.title": "帖子小工具",
+	"thread_tools.pin": "钉住帖子",
+	"thread_tools.lock": "锁定帖子",
+	"thread_tools.move": "移动帖子",
+	"thread_tools.fork": "建立帖子分支",
+	"thread_tools.delete": "删除帖子",
+
+	"load_categories": "正在载入节点",
+	"disabled_categories_note": "已禁用的节点是灰色的",
+	"confirm_move": "移动",
+	"confirm_fork": "建立分支",
+
+	"favourite": "收藏",
+	"favourites": "收藏",
+	"favourites.not_logged_in.title": "未登录",
+	"favourites.not_logged_in.message": "要使用收藏功能，请先登录",
+	"favourites.has_no_favourites": "您还未收藏任何话题，去收藏一些吧！",
+
+	"posted_by": "发布者",
+	"loading": "正在载入",
+	"more_posts": "更多帖子",
+	"move_topic": "移动话题",
+	"move_post": "移动帖子",
+	"fork_topic": "建立话题分支",
+	"topic_will_be_moved_to": "这个话题将会被移动到节点：",
+	"fork_topic_instruction": "点击您想建立分支的话题",
+	"fork_no_pids": "未选择任何帖子",
+	"fork_success": "成功建立了话题分支",
+
+	"reputation": "声望",
+	"posts": "帖子"
+}

@@ -1,4 +1,4 @@
-<h1><i class="fa fa-code-fork"></i> Plugins</h1>
+<h1><i class="fa fa-code-fork"></i> 插件</h1>
 
 <ul class="plugins">
 	<!-- BEGIN plugins -->
@@ -15,9 +15,9 @@
 
 <div class="alert alert-warning">
 	<p>
-		<strong>Interested in writing plugins for NodeBB?</strong>
+		<strong>参与论坛插件的撰写</strong>
 	</p>
 	<p>
-		Full documentation regarding plugin authoring can be found in the <a target="_blank" href="https://github.com/designcreateplay/NodeBB/wiki/Writing-Plugins-for-NodeBB">NodeBB Wiki</a>.
+		完整文档请查看： <a target="_blank" href="https://github.com/designcreateplay/NodeBB/wiki/Writing-Plugins-for-NodeBB">NodeBB Wiki</a>.
 	</p>
 </div>

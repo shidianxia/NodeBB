@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>论坛管理中心</title>
+	<title>NodeBB Administration Panel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
 	</script>
-	<link id="base-theme" href="//lib.sinaapp.com/js/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link id="base-theme" href="{relative_path}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" href="{relative_path}/vendor/fontawesome/css/font-awesome.min.css">
-	<script type="text/javascript" src="//lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="//lib.sinaapp.com/js/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="//lib.sinaapp.com/js/qunit/1.11/qunit.js"></script>
-	<link rel="stylesheet" type="text/css" href="//lib.sinaapp.com/js/qunit/1.11/qunit.css">
+	<script type="text/javascript" src="//code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="{relative_path}/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/qunit/qunit-git.js"></script>
+	<link rel="stylesheet" type="text/css" href="//code.jquery.com/qunit/qunit-git.css">
 	<link rel="stylesheet" type="text/css" href="{relative_path}/vendor/colorpicker/colorpicker.css">
 	<script type="text/javascript" src="{relative_path}/socket.io/socket.io.js"></script>
 	<script type="text/javascript" src="{relative_path}/src/app.js"></script>
@@ -33,8 +33,8 @@
 			}
 		});
 	</script>
-	<link rel="stylesheet" type="text/css" href="//lib.sinaapp.com/js/jquery-ui/1.10.2/themes/smoothness/jquery-ui.min.css">
-	<script type="text/javascript" src="//lib.sinaapp.com/js/jquery-ui/1.10.2/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="{relative_path}/src/utils.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="{relative_path}/css/theme.css" />
@@ -49,18 +49,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="{relative_path}/admin/index">论坛管理中心</a>
+				<a class="navbar-brand" href="{relative_path}/admin/index">NodeBB ACP</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="{relative_path}/admin/index"><i class="fa fa-home" title="首页"></i></a>
+						<a href="{relative_path}/admin/index"><i class="fa fa-home" title="Home"></i></a>
 					</li>
 					<li>
-						<a href="{relative_path}/admin/settings"><i class="fa fa-cogs" title="设置"></i></a>
+						<a href="{relative_path}/admin/settings"><i class="fa fa-cogs" title="Settings"></i></a>
 					</li>
 					<li>
-						<a href="{relative_path}/" target="_top"><i class="fa fa-book" title="论坛"></i></a>
+						<a href="{relative_path}/" target="_top"><i class="fa fa-book" title="Forum"></i></a>
 					</li>
 					<li>
 						<a href="#" id="reconnect"></a>
@@ -74,10 +74,10 @@
 						</a>
 						<ul id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
-								<a id="user-profile-link" href="{relative_path}/user/{userslug}" target="_top"><span>个人页面</span></a>
+								<a id="user-profile-link" href="{relative_path}/user/{userslug}" target="_top"><span>Profile</span></a>
 							</li>
 							<li id="logout-link">
-								<a href="#">退出</a>
+								<a href="#">Log out</a>
 							</li>
 						</ul>
 					</li>
@@ -94,20 +94,20 @@
 			<div class="col-sm-3">
 				<div class="well sidebar-nav">
 					<ul class="nav nav-list">
-						<li class="nav-header">论坛</li>
-						<li class="active"><a href="{relative_path}/admin/index"><i class="fa fa-fw fa-home"></i> 首页</a></li>
-						<li><a href="{relative_path}/admin/categories/active"><i class="fa fa-fw fa-folder"></i> 节点</a></li>
-						<li><a href="{relative_path}/admin/users/latest"><i class="fa fa-fw fa-user"></i> 成员</a></li>
-						<li><a href="{relative_path}/admin/groups"><i class="fa fa-fw fa-group"></i> 用户组</a></li>
-						<li><a href="{relative_path}/admin/topics"><i class="fa fa-fw fa-book"></i> 话题</a></li>
-						<li><a href="{relative_path}/admin/themes"><i class="fa fa-fw fa-th"></i> 主题</a></li>
-						<li><a href="{relative_path}/admin/plugins"><i class="fa fa-fw fa-code-fork"></i> 插件</a></li>
-						<li><a href="{relative_path}/admin/languages"><i class="fa fa-fw fa-comments-o"></i> 语言</a></li>
-						<li><a href="{relative_path}/admin/settings"><i class="fa fa-fw fa-cogs"></i> 设置</a></li>
-						<li><a href="{relative_path}/admin/database"><i class="fa fa-fw fa-hdd-o"></i> 数据库</a></li>
-						<li><a href="{relative_path}/admin/logger"><i class="fa fa-fw fa-th"></i> 日志</a></li>
-						<li><a href="{relative_path}/admin/motd"><i class="fa fa-fw fa-comment"></i> 每日提示</a></li>
-						<li><a href="{relative_path}/admin/events"><i class="fa fa-fw fa-calendar-o"></i> 事件</a></li>
+						<li class="nav-header">NodeBB</li>
+						<li class="active"><a href="{relative_path}/admin/index"><i class="fa fa-fw fa-home"></i> Home</a></li>
+						<li><a href="{relative_path}/admin/categories/active"><i class="fa fa-fw fa-folder"></i> Categories</a></li>
+						<li><a href="{relative_path}/admin/users/latest"><i class="fa fa-fw fa-user"></i> Users</a></li>
+						<li><a href="{relative_path}/admin/groups"><i class="fa fa-fw fa-group"></i> Groups</a></li>
+						<li><a href="{relative_path}/admin/topics"><i class="fa fa-fw fa-book"></i> Topics</a></li>
+						<li><a href="{relative_path}/admin/themes"><i class="fa fa-fw fa-th"></i> Themes</a></li>
+						<li><a href="{relative_path}/admin/plugins"><i class="fa fa-fw fa-code-fork"></i> Plugins</a></li>
+						<li><a href="{relative_path}/admin/languages"><i class="fa fa-fw fa-comments-o"></i> Languages</a></li>
+						<li><a href="{relative_path}/admin/settings"><i class="fa fa-fw fa-cogs"></i> Settings</a></li>
+						<li><a href="{relative_path}/admin/database"><i class="fa fa-fw fa-hdd-o"></i> Database</a></li>
+						<li><a href="{relative_path}/admin/logger"><i class="fa fa-fw fa-th"></i> Logger</a></li>
+						<li><a href="{relative_path}/admin/motd"><i class="fa fa-fw fa-comment"></i> MOTD</a></li>
+						<li><a href="{relative_path}/admin/events"><i class="fa fa-fw fa-calendar-o"></i> Events</a></li>
 					</ul>
 				</div>
 				<div class="well sidebar-nav">
@@ -125,7 +125,7 @@
 				</div>
 				<div class="well sidebar-nav">
 					<ul class="nav nav-list">
-						<li class="nav-header">插件</li>
+						<li class="nav-header">Plugins</li>
 						<!-- BEGIN plugins -->
 						<li>
 							<a href="{relative_path}/admin{plugins.route}"><i class="fa fa-fw {plugins.icon}"></i> {plugins.name}</a>
@@ -135,17 +135,17 @@
 				</div>
 				<div class="well sidebar-nav">
 					<ul class="nav nav-list">
-						<li class="nav-header">单元测试</li>
+						<li class="nav-header">Unit Tests</li>
 						<ul class="nav nav-list">
-							<li><a href="{relative_path}/admin/testing/categories">节点</a></li>
-							<!--<li><a href="{relative_path}/admin/testing/topics">话题</a></li>
-							<li><a href="{relative_path}/admin/testing/posts">帖子</a></li>
-							<li><a href="{relative_path}/admin/testing/accounts">账户</a></li>
-							<li><a href="{relative_path}/admin/testing/chat">聊天</a></li>
-							<li><a href="{relative_path}/admin/testing/notifications">提醒</a></li>
-							<li><a href="{relative_path}/admin/testing/friends">友邻</a></li>
+							<li><a href="{relative_path}/admin/testing/categories">Categories</a></li>
+							<!--<li><a href="{relative_path}/admin/testing/topics">Topics</a></li>
+							<li><a href="{relative_path}/admin/testing/posts">Posts</a></li>
+							<li><a href="{relative_path}/admin/testing/accounts">Accounts</a></li>
+							<li><a href="{relative_path}/admin/testing/chat">Chat</a></li>
+							<li><a href="{relative_path}/admin/testing/notifications">Notifications</a></li>
+							<li><a href="{relative_path}/admin/testing/friends">Friends</a></li>
 							<li><a href="{relative_path}/admin/testing/feed">RSS Feed</a></li>
-							<li><a href="{relative_path}/admin/testing/emails">邮件地址</a></li>-->
+							<li><a href="{relative_path}/admin/testing/emails">Emails</a></li>-->
 						</ul>
 					</ul>
 				</div><!--/.well -->

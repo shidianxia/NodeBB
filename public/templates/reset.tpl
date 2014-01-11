@@ -21,7 +21,7 @@
 		<strong>[[reset_password:invalid_email]]</strong>
 	</div>
 	<form onsubmit="return false;">
-		<input type="text" class="form-control input-block input-lg" placeholder="Enter Email Address" id="email" />
+		<input type="text" class="form-control input-block input-lg" placeholder="请输入邮件地址" id="email" />
 
 		<br />
 		<button class="btn btn-primary btn-block btn-lg" id="reset" type="submit">[[reset_password:reset_password]]</button>

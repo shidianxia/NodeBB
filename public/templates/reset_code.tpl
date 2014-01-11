@@ -27,9 +27,9 @@
 	</div>
 	<form onsubmit="return false;" id="reset-form">
 		<label for="password">[[reset_password:new_password]]</label>
-		<input class="form-control input-lg" type="password" placeholder="A new password" id="password" /><br />
+		<input class="form-control input-lg" type="password" placeholder="输入新密码" id="password" /><br />
 		<label for="repeat">[[reset_password:repeat_password]]</label>
-		<input class="form-control input-lg" type="password" placeholder="The same password" id="repeat" /><br />
+		<input class="form-control input-lg" type="password" placeholder="再输入一次密码" id="repeat" /><br />
 		<button class="btn btn-primary btn-lg btn-block" id="reset" type="submit" disabled>[[reset_password:reset_password]]</button>
 	</form>
 </div>

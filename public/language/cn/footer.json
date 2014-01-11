@@ -1,0 +1,10 @@
+{
+	"chat.chatting_with": "开始与 <span id=\"chat-with-name\"></span> 聊天",
+	"chat.placeholder": "输入您想说的话，按回车键发送",
+	"chat.send": "发送",
+	"stats.online": "在线",
+	"stats.users": "成员",
+	"stats.topics": "话题",
+	"stats.posts": "帖子",
+	"success": "成功"
+}

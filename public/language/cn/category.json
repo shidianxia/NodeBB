@@ -1,0 +1,14 @@
+{
+	"new_topic_button": "发布新话题",
+	"no_topics": "<strong>这个节点还没有任何帖子</strong><br />来成为第一个发帖的人吧！",
+	"sidebar.recent_replies": "最近回复",
+	"sidebar.active_participants": "活跃成员",
+	"sidebar.moderators": "节点主持人",
+	"posts": "帖子",
+	"views": "查看",
+	"posted": "已发布",
+	"browsing": "浏览",
+	"no_replies": "还没有人回复",
+	"replied": "已回复",
+	"last_edited_by": "最后编辑"
+}

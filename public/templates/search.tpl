@@ -7,7 +7,7 @@
 <form id="mobile-search-form" class="navbar-form navbar-right visible-xs" role="search" method="GET" action="">
 	<div class="" id="search-fields">
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Search" name="query" value="">
+			<input type="text" class="form-control" placeholder="搜索" name="query" value="">
 		</div>
 		<button type="submit" class="btn btn-default hide">[[global:header.search]]</button>
 	</div>
@@ -45,7 +45,7 @@
 		<!-- IF post_matches -->
 		<small>{post_matches} result(s) matching "{search_query}"</small>
 		<!-- ENDIF post_matches -->
-		<div class="alert alert-info {show_no_posts}">No posts found!</div>
+		<div class="alert alert-info {show_no_posts}">没有找到任何帖子。</div>
 
 		<ul id="topics-container" data-search-query="{search_query}">
 			<!-- BEGIN posts -->

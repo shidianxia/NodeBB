@@ -1,0 +1,41 @@
+{
+	"banned": "已禁止",
+	"offline": "离线",
+	"username": "用户名",
+	"email": "邮件地址",
+	"fullname": "全名",
+	"website": "网站",
+	"location": "位置",
+	"age": "年龄",
+	"joined": "已加入",
+	"lastonline": "最后在线",
+	"profile_views": "个人页面查看次数",
+	"reputation": "声望",
+	"posts": "帖子",
+	"followers": "粉丝",
+	"following": "关注",
+	"signature": "签名",
+	"gravatar": "头像",
+	"birthday": "生日",
+
+	"change_picture": "更改头像",
+	"edit": "编辑",
+	"uploaded_picture": "已上传的头像",
+	"upload_new_picture": "上传新头像",
+	"change_password": "更改密码",
+	"confirm_password": "确认密码",
+	"password": "密码",
+
+	"upload_picture": "上传头像",
+	"upload_a_picture": "上传一张图片",
+	"image_spec": "您可以上传小于256kb的PNG、JPG、GIF格式图片。",
+
+	"settings": "设置",
+	"show_email": "公开显示我的邮件地址",
+
+	"has_no_follower": "还没有任何粉丝",
+	"follows_no_one": "还没有关注任何人",
+
+	"email_hidden": "邮件地址已隐藏",
+	"hidden": "隐藏"
+}

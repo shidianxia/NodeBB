@@ -1,4 +1,4 @@
-<h1><i class="fa fa-group"></i> Groups</h1>
+<h1><i class="fa fa-group"></i> 用户组</h1>
 
 <hr />
 
@@ -11,9 +11,9 @@
 					<h2>{groups.name}</h2>
 					<p>{groups.description}</p>
 					<div class="btn-group">
-						<button class="btn btn-default" data-action="members">Members</button>
+						<button class="btn btn-default" data-action="members">成员</button>
 						<!-- IF groups.deletable -->
-						<button class="btn btn-danger" data-action="delete">Delete Group</button>
+						<button class="btn btn-danger" data-action="delete">删除组</button>
 						<!-- ENDIF groups.deletable -->
 					</div>
 				</div>
@@ -28,7 +28,7 @@
 	</ul>
 
 	<div class="text-center">
-		<button class="btn btn-primary" id="create">New Group</button>
+		<button class="btn btn-primary" id="create">新建用户组</button>
 	</div>
 
 	<div class="modal fade" id="create-modal">
@@ -36,24 +36,24 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Create Group</h4>
+					<h4 class="modal-title">新建用户组</h4>
 				</div>
 				<div class="modal-body">
 					<div class="alert alert-danger hide" id="create-modal-error"></div>
 					<form>
 						<div class="form-group">
-							<label for="group-name">Group Name</label>
-							<input type="text" class="form-control" id="create-group-name" placeholder="Group Name" />
+							<label for="group-name">用户组名称</label>
+							<input type="text" class="form-control" id="create-group-name" placeholder="输入用户组名称" />
 						</div>
 						<div class="form-group">
-							<label for="group-name">Description</label>
-							<input type="text" class="form-control" id="create-group-desc" placeholder="A short description about your group" />
+							<label for="group-name">描述</label>
+							<input type="text" class="form-control" id="create-group-desc" placeholder="该用户组的简短描述" />
 						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary" id="create-modal-go">Create</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="create-modal-go">创建</button>
 				</div>
 			</div>
 		</div>
@@ -64,33 +64,33 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Manage Group</h4>
+					<h4 class="modal-title">管理用户组</h4>
 				</div>
 				<div class="modal-body">
 					<div class="alert alert-danger hide" id="create-modal-error"></div>
 					<form>
 						<div class="form-group">
-							<label for="group-name">Group Name</label>
-							<input type="text" class="form-control" id="change-group-name" placeholder="Group Name" />
+							<label for="group-name">用户组名称</label>
+							<input type="text" class="form-control" id="change-group-name" placeholder="输入用户组名称" />
 						</div>
 						<div class="form-group">
-							<label for="group-name">Description</label>
-							<input type="text" class="form-control" id="change-group-desc" placeholder="A short description about your group" />
+							<label for="group-name">描述</label>
+							<input type="text" class="form-control" id="change-group-desc" placeholder="该用户组的简短描述" />
 						</div>
 						<div class="form-group">
-							<label>Members</label>
-							<p>Click on a user to remove them from the group</p>
+							<label>成员</label>
+							<p>点击成员将其移出用户组</p>
 							<ul class="members current_members" id="group-details-members"></ul>
 						</div>
 						<div class="form-group">
-							<label for="add-member">Add User to Group</label>
-							<input type="text" class="form-control" id="group-details-search" placeholder="Search Users" />
+							<label for="add-member">添加成员</label>
+							<input type="text" class="form-control" id="group-details-search" placeholder="搜索成员" />
 							<ul class="members" id="group-details-search-results"></ul>
 						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
 				</div>
 			</div>
 		</div>

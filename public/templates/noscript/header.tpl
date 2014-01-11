@@ -1,8 +1,8 @@
 		<div class="alert alert-danger">
 			<p>
-				Your browser does not seem to support javascript. As a result, your viewing experience will be diminished, and you have been placed in <strong>read-only mode</strong>.
+				您的浏览器不支持或未开启Javascript支持。 您将不能得到完整的体验，我们已经为您开启 <strong>只读模式</strong>.
 			</p>
 			<p>
-				Please download a browser that supports javascript, or enable it, if it disabled (i.e. NoScript).
+				请检查您的浏览器设置。
 			</p>
 		</div>

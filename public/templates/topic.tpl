@@ -66,7 +66,7 @@
 
 							<div class="btn-group">
 								<!-- IF @first -->
-								<button class="btn btn-sm btn-default follow" type="button" title="Be notified of new replies in this topic"><i class="fa fa-eye"></i></button>
+								<button class="btn btn-sm btn-default follow" type="button" title="话题有新回复提醒我"><i class="fa fa-eye"></i></button>
 								<!-- ENDIF @first -->
 								<button data-favourited="{posts.favourited}" class="favourite btn btn-sm btn-default <!-- IF posts.favourited --> btn-warning <!-- ENDIF posts.favourited -->" type="button">
 									<span class="favourite-text">[[topic:favourite]]</span>
@@ -221,8 +221,8 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label for="title">Title</label>
-						<input id="fork-title" type="text" class="form-control" placeholder="Enter new thread title"><br/>
+						<label for="title">标题</label>
+						<input id="fork-title" type="text" class="form-control" placeholder="输入新的话题标题..."><br/>
 						<label>[[topic:fork_topic_instruction]]</label> <br/>
 						<span id="fork-pids"></span>
 					</div>
@@ -245,8 +245,8 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label for="topicId">Topic ID</label>
-						<input id="topicId" type="text" class="form-control" placeholder="Enter topic ID"><br/>
+						<label for="topicId">话题 ID</label>
+						<input id="topicId" type="text" class="form-control" placeholder="输入话题 ID"><br/>
 					</div>
 				</div>
 

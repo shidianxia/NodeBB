@@ -1,4 +1,4 @@
-<h1><i class="fa fa-book"></i> Topics</h1>
+<h1><i class="fa fa-book"></i> 话题</h1>
 <hr />
 
 
@@ -12,8 +12,8 @@
 		</div>
 		<a target="_blank" href="{relative_path}/topic/{topics.slug}">{topics.title}</a>
 		<ul>
-			<li><i class="fa fa-clock-o"></i> Posted <span class="timeago" title="{topics.relativeTime}"></span> by {topics.username}</li>
-			<li><i class="fa fa-comments"></i> {topics.postcount} post(s)</li>
+			<li><i class="fa fa-clock-o"></i> 发布于 <span class="timeago" title="{topics.relativeTime}"></span> 发布者 {topics.username}</li>
+			<li><i class="fa fa-comments"></i> {topics.postcount} 个帖子</li>
 		</ul>
 		<div class="clear"></div>
 	</li>
@@ -22,11 +22,11 @@
 
 <!-- IF notopics -->
 <div class="alert alert-warning" id="category-no-topics">
-	<strong>There are no topics.</strong>
+	<strong>此节点下还没有任何帖子</strong>
 </div>
 <!-- ELSE -->
 <div class="text-center">
-	<button id="topics_loadmore" class="btn btn-primary btn-lg">Load More Topics</button>
+	<button id="topics_loadmore" class="btn btn-primary btn-lg">载入更多话题</button>
 </div>
 <!-- ENDIF notopics -->
 
