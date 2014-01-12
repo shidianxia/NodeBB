@@ -951,7 +951,7 @@ define(['composer'], function(composer) {
 
 		if (scrollTop < jQuery('.posts > .post-row:first-child').height() && Topic.postCount > 1) {
 			localStorage.removeItem("topic:" + tid + ":bookmark");
-			pagination.innerHTML = '1 out of ' + Topic.postCount;
+			pagination.innerHTML = ' 第 1 楼，共 ' + Topic.postCount + ' 楼 ';
 			progressBar.width(0);
 			return;
 		}
@@ -985,7 +985,7 @@ define(['composer'], function(composer) {
 
 		setTimeout(function() {
 			if (scrollTop + windowHeight == jQuery(document).height()) {
-				pagination.innerHTML = Topic.postCount + ' out of ' + Topic.postCount;
+				pagination.innerHTML = ' 第 ' + Topic.postCount + ' 楼，共 ' + Topic.postCount + ' 楼 ';
 				progressBar.width('100%');
 			}
 		}, 100);
