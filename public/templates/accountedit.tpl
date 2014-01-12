@@ -59,14 +59,14 @@
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">[[user:email]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputEmail" placeholder="Email" value="{email}">
+							<input class="form-control" type="text" id="inputEmail" placeholder="邮件地址" value="{email}">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputFullname">[[user:fullname]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputFullname" placeholder="Full Name" value="{fullname}">
+							<input class="form-control" type="text" id="inputFullname" placeholder="您的真实姓名" value="{fullname}">
 						</div>
 					</div>
 
@@ -80,14 +80,14 @@
 					<div class="control-group">
 						<label class="control-label" for="inputLocation">[[user:location]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputLocation" placeholder="Location" value="{location}">
+							<input class="form-control" type="text" id="inputLocation" placeholder="您所在的城市" value="{location}">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputBirthday">[[user:birthday]]</label>
 						<div class="controls">
-							<input class="form-control" type="date" id="inputBirthday" placeholder="mm/dd/yyyy" value="{birthday}">
+							<input class="form-control" type="date" id="inputBirthday" placeholder="格式 mm/dd/yyyy" value="{birthday}">
 						</div>
 					</div>
 
