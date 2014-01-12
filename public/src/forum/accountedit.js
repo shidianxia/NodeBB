@@ -190,7 +190,7 @@ define(['forum/accountheader', 'uploader'], function(header, uploader) {
 							return;
 						}
 
-						app.alertSuccess('Your password is updated!');
+						app.alertSuccess('密码修改成功！');
 
 					});
 				}

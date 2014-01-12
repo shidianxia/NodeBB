@@ -18,8 +18,8 @@ define(function() {
 				ajaxify.go('notifications');
 				app.alert({
 					alert_id: "notifications:mark_all_read",
-					title: "All Notifications Read",
-					message: "Successfully marked all notifications read",
+					title: "已阅读所有提醒",
+					message: "已经将所有提醒标记为已读。",
 					type: 'success',
 					timeout: 2500
 				})

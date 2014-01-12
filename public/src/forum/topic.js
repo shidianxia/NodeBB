@@ -503,7 +503,7 @@ define(['composer'], function(composer) {
 					moveModal.addClass('hide');
 					$('#topicId').val('');
 
-					app.alertSuccess('Post moved!');
+					app.alertSuccess('成功移动帖子！');
 				});
 			});
 		});

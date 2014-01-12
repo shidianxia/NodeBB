@@ -12,9 +12,9 @@ define(['forum/accountheader'], function(header) {
 
 			socket.emit('api:user.saveSettings', settings, function(err) {
 				if (!err) {
-					app.alertSuccess('Settings saved!');
+					app.alertSuccess('设置已生效');
 				} else {
-					app.alertError('There was an error saving settings!');
+					app.alertError('无法保存设置');
 				}
 			});
 			return false;

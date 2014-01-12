@@ -246,7 +246,7 @@ var socket,
 			timeout = 2000;
 
 		app.alert({
-			title: 'Success',
+			title: '操作成功',
 			message: message,
 			type: 'success',
 			timeout: timeout

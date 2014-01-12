@@ -59,13 +59,13 @@ define(function() {
 					btn.remove();
 					$('#topics-container').empty();
 					$('#category-no-topics').removeClass('hidden');
-					app.alertSuccess('All topics marked as read!');
+					app.alertSuccess('已将所有话题标记为已读');
 					$('#numUnreadBadge')
 						.removeClass('badge-important')
 						.addClass('badge-inverse')
 						.html('0');
 				} else {
-					app.alertError('There was an error marking topics read!');
+					app.alertError('标记已读发生了错误，请重试');
 				}
 			});
 		});
