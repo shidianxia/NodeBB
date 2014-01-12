@@ -790,7 +790,7 @@ websockets.init = function(io) {
 				var username = usersData[0].username,
 					toUsername = usersData[1].username,
 					finalMessage = username + ' : ' + msg,
-					notifText = 'New message from <strong>' + username + '</strong>';
+					notifText = '您有来自 <strong>' + username + '</strong> 的新消息';
 
 				if (!isUserOnline(touid)) {
 					notifications.create(notifText, 'javascript:app.openChat(&apos;' + username + '&apos;, ' + uid + ');', 'notification_' + uid + '_' + touid, function(nid) {

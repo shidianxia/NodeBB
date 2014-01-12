@@ -25,9 +25,9 @@ define(['taskbar', 'string'], function(taskbar, S) {
 		socket.emit('api:user.isOnline', chatModal.touid, function(data) {
 			if(data.online !== chatModal.online) {
 				if(data.online) {
-					module.appendChatMessage(chatModal, chatModal.username + ' is currently online.\n', data.timestamp);
+					module.appendChatMessage(chatModal, chatModal.username + ' 目前在线\n', data.timestamp);
 				} else {
-					module.appendChatMessage(chatModal, chatModal.username + ' is currently offline.\n', data.timestamp);
+					module.appendChatMessage(chatModal, chatModal.username + ' 目前不在线\n', data.timestamp);
 				}
 				chatModal.online = data.online;
 			}
