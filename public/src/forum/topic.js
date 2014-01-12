@@ -978,7 +978,7 @@ define(['composer'], function(composer) {
 					smallestNonNegative = Number.MAX_VALUE;
 				}
 
-				pagination.innerHTML = (this.postnumber-1) + ' out of ' + Topic.postCount;
+				pagination.innerHTML = ' 第 ' + (this.postnumber-1) + ' 楼，共 ' + Topic.postCount + ' 楼 ';
 				progressBar.width(((this.postnumber-1) / Topic.postCount * 100) + '%');
 			}
 		});
