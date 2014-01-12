@@ -26,7 +26,7 @@ define(['forum/accountheader', 'uploader'], function(header, uploader) {
 
 			socket.emit('api:user.updateProfile', userData, function(err, data) {
 				if (data.success) {
-					app.alertSuccess('Your profile has been updated successfully!');
+					app.alertSuccess('您的个人资料已编辑成功！');
 					if (data.picture) {
 						$('#user-current-picture').attr('src', data.picture);
 						$('#user_label img').attr('src', data.picture);
@@ -36,7 +36,7 @@ define(['forum/accountheader', 'uploader'], function(header, uploader) {
 						gravatarPicture = data.gravatarpicture;
 					}
 				} else {
-					app.alertError('There was an error updating your profile! ' + err.error);
+					app.alertError('保存时发生了一些错误，请重试 ' + err.error);
 				}
 			});
 			return false;

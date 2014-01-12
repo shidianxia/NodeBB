@@ -149,8 +149,8 @@ var socket,
 
 					socket.on('event:banned', function() {
 						app.alert({
-							title: 'Banned',
-							message: 'You are banned you will be logged out!',
+							title: '你已被禁止',
+							message: '您已被禁止进入本社区！',
 							type: 'warning',
 							timeout: 1000
 						});
@@ -345,8 +345,8 @@ var socket,
 		function showAlert() {
 			app.alert({
 				type: 'success',
-				title: 'Welcome Back ' + app.username + '!',
-				message: 'You have successfully logged in!',
+				title: '欢迎回来 ' + app.username + '！',
+				message: '您已成功登录。',
 				timeout: 5000
 			});
 		}
@@ -371,8 +371,8 @@ var socket,
 		if (username === app.username) {
 			app.alert({
 				type: 'warning',
-				title: 'Invalid Chat',
-				message: "You can't chat with yourself!",
+				title: '您无法和自己聊天',
+				message: "这里不像现实中可以自言自语！",
 				timeout: 5000
 			});
 
@@ -382,8 +382,8 @@ var socket,
 		if (!app.username) {
 			app.alert({
 				type: 'danger',
-				title: 'Not Logged In',
-				message: 'Please log in to chat with <strong>' + username + '</strong>',
+				title: '请先登录',
+				message: '请登录后再与 <strong>' + username + '</strong> 聊天',
 				timeout: 5000
 			});
 

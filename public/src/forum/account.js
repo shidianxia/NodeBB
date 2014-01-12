@@ -41,9 +41,9 @@ define(['forum/accountheader'], function(header) {
 					if (success) {
 						followBtn.addClass('hide');
 						unfollowBtn.removeClass('hide');
-						app.alertSuccess('You are now following ' + username + '!');
+						app.alertSuccess('您已关注 ' + username + '!');
 					} else {
-						app.alertError('There was an error following' + username + '!');
+						app.alertError('无法关注' + username + '!');
 					}
 				});
 				return false;
@@ -56,9 +56,9 @@ define(['forum/accountheader'], function(header) {
 					if (success) {
 						followBtn.removeClass('hide');
 						unfollowBtn.addClass('hide');
-						app.alertSuccess('You are no longer following ' + username + '!');
+						app.alertSuccess('您已不再关注 ' + username + '!');
 					} else {
-						app.alertError('There was an error unfollowing ' + username + '!');
+						app.alertError('无法取消关注 ' + username + '!');
 					}
 				});
 				return false;
