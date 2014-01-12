@@ -62,7 +62,7 @@ define(['taskbar'], function(taskbar) {
 		var uuid = utils.generateUUID();
 
 		taskbar.push('composer', uuid, {
-			title: post.title ? post.title : 'New Topic',
+			title: post.title ? post.title : '发布新话题',
 			icon: post.picture
 		});
 
@@ -102,7 +102,7 @@ define(['taskbar'], function(taskbar) {
 				bodyEl = postContainer.find('textarea');
 
 			if (parseInt(postData.tid) > 0) {
-				titleEl.val('Replying to: ' + postData.title);
+				titleEl.val('回复：' + postData.title);
 				titleEl.prop('readOnly', true);
 			} else if (parseInt(postData.pid) > 0) {
 				titleEl.val(postData.title);

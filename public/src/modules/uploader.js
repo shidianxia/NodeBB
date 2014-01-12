@@ -61,7 +61,7 @@ define(function() {
 					}
 					callback(response.path);
 
-					success('File uploaded successfully!');
+					success('上传成功');
 					setTimeout(function() {
 						module.hideAlerts();
 						$('#upload-picture-modal').modal('hide');

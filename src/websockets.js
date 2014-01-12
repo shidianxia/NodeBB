@@ -376,16 +376,16 @@ websockets.init = function(io) {
 			socket.emit('event:alert', {
 				type: 'danger',
 				timeout: 2000,
-				title: 'Content too short',
-				message: "Please enter a longer post. At least " + meta.config.minimumPostLength + " characters.",
+				title: '内容太短',
+				message: "请发表至少 " + meta.config.minimumPostLength + " 个文字。",
 				alert_id: 'post_error'
 			});
 		}
 
 		function emitTooManyPostsAlert(socket) {
 			socket.emit('event:alert', {
-				title: 'Too many posts!',
-				message: 'You can only post every ' + meta.config.postDelay + ' seconds.',
+				title: '您发表内容太频繁啦',
+				message: ' 请稍等 ' + meta.config.postDelay + ' 秒后再尝试发布内容。',
 				type: 'danger',
 				timeout: 2000
 			});
@@ -394,8 +394,8 @@ websockets.init = function(io) {
 		socket.on('api:topics.post', function(data) {
 			if (uid < 1 && parseInt(meta.config.allowGuestPosting, 10) === 0) {
 				socket.emit('event:alert', {
-					title: 'Post Unsuccessful',
-					message: 'You don&apos;t seem to be logged in, so you cannot reply.',
+					title: '您似乎还未登录',
+					message: '请先登录后再发表内容。',
 					type: 'danger',
 					timeout: 2000
 				});
@@ -414,8 +414,8 @@ websockets.init = function(io) {
 						emitTooManyPostsAlert(socket);
 					} else if (err.message === 'no-privileges') {
 						socket.emit('event:alert', {
-							title: 'Unable to post',
-							message: 'You do not have posting privileges in this category.',
+							title: '无法发布',
+							message: '您没有权限在此节点发布内容。',
 							type: 'danger',
 							timeout: 7500
 						});
@@ -440,8 +440,8 @@ websockets.init = function(io) {
 					emitTopicPostStats();
 
 					socket.emit('event:alert', {
-						title: 'Thank you for posting',
-						message: 'You have successfully posted. Click here to view your post.',
+						title: '您成功发布了新话题！',
+						message: '点击这里查看您发布的话题。',
 						type: 'success',
 						timeout: 2000
 					});
@@ -467,8 +467,8 @@ websockets.init = function(io) {
 		socket.on('api:posts.reply', function(data) {
 			if (uid < 1 && parseInt(meta.config.allowGuestPosting, 10) === 0) {
 				socket.emit('event:alert', {
-					title: 'Reply Unsuccessful',
-					message: 'You don&apos;t seem to be logged in, so you cannot reply.',
+					title: '您似乎还未登录',
+					message: '请先登录，再发表回复。',
 					type: 'danger',
 					timeout: 2000
 				});
@@ -488,15 +488,15 @@ websockets.init = function(io) {
 						emitTooManyPostsAlert(socket);
 					} else if (err.message === 'reply-error') {
 						socket.emit('event:alert', {
-							title: 'Reply Unsuccessful',
-							message: 'Your reply could not be posted at this time. Please try again later.',
+							title: '无法回复',
+							message: '您暂时无法回复，请稍候重试。',
 							type: 'warning',
 							timeout: 2000
 						});
 					} else if (err.message === 'no-privileges') {
 						socket.emit('event:alert', {
-							title: 'Unable to post',
-							message: 'You do not have posting privileges in this category.',
+							title: '无法发布',
+							message: '因为权限问题，您暂时无法发布内容。',
 							type: 'danger',
 							timeout: 7500
 						});
@@ -509,8 +509,8 @@ websockets.init = function(io) {
 					emitTopicPostStats();
 
 					socket.emit('event:alert', {
-						title: 'Reply Successful',
-						message: 'You have successfully replied. Click here to view your reply.',
+						title: '回复成功！',
+						message: '感谢您的回复，您可以点击这查看您的回复。',
 						type: 'success',
 						timeout: 2000
 					});
@@ -625,8 +625,8 @@ websockets.init = function(io) {
 		socket.on('api:topic.createTopicFromPosts', function(data, callback) {
 			if(!uid) {
 				socket.emit('event:alert', {
-					title: 'Can&apos;t fork',
-					message: 'Guests can&apos;t fork topics!',
+					title: '无法建立分支',
+					message: '您无法在未登录时操作建立分支。',
 					type: 'warning',
 					timeout: 2000
 				});
@@ -641,8 +641,8 @@ websockets.init = function(io) {
 		socket.on('api:topic.movePost', function(data, callback) {
 			if(!uid) {
 				socket.emit('event:alert', {
-					title: 'Can&apos;t fork',
-					message: 'Guests can&apos;t fork topics!',
+					title: '无法建立分支',
+					message: '您无法在未登录时操作建立分支。',
 					type: 'warning',
 					timeout: 2000
 				});
@@ -685,8 +685,8 @@ websockets.init = function(io) {
 		socket.on('api:posts.edit', function(data) {
 			if(!uid) {
 				socket.emit('event:alert', {
-					title: 'Can&apos;t edit',
-					message: 'Guests can&apos;t edit posts!',
+					title: '您还没登录吧？',
+					message: '请先登录再编辑您的帖子。',
 					type: 'warning',
 					timeout: 2000
 				});
