@@ -824,7 +824,7 @@ websockets.init = function(io) {
 							userSockets[uid][x].emit('event:chats.receive', {
 								fromuid: touid,
 								username: toUsername,
-								message: 'You : ' + msg,
+								message: '您 : ' + msg,
 								timestamp: Date.now()
 							});
 						}
