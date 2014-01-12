@@ -1,6 +1,6 @@
 <ol class="breadcrumb">
 	<li><a href="{relative_path}/">首页</a></li>
-	<li class="active">Recent <a href="{relative_path}/recent.rss"><i class="fa fa-rss-square"></i></a></li>
+	<li class="active">最新 <a href="{relative_path}/recent.rss"><i class="fa fa-rss-square"></i></a></li>
 </ol>
 
 <ul class="nav nav-pills">
