@@ -99,14 +99,14 @@
 					}
 				} else {
 					notifEl.className = 'no-notifs';
-					notifEl.innerHTML = '<a>You have no notifications</a>';
+					notifEl.innerHTML = '<a>您目前没有提醒</a>';
 					notifFrag.appendChild(notifEl.cloneNode(true));
 				}
 
 				// Add dedicated link to /notifications
 				notifEl.removeAttribute('data-nid');
 				notifEl.className = 'pagelink';
-				notifEl.innerHTML = '<a href="' + RELATIVE_PATH + '/notifications">See all Notifications</a>';
+				notifEl.innerHTML = '<a href="' + RELATIVE_PATH + '/notifications">查看所有提醒</a>';
 				notifFrag.appendChild(notifEl.cloneNode(true));
 
 				notifList.appendChild(notifFrag);
@@ -216,7 +216,7 @@
 					chatsFrag.appendChild(chatEl.cloneNode(true));
 				}
 			} else {
-				chatEl.innerHTML = '<a href="#">No Recent Chats</a>';
+				chatEl.innerHTML = '<a href="#">最近没有聊天</a>';
 				chatsFrag.appendChild(chatEl.cloneNode(true));
 			}
 

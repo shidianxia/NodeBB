@@ -9,7 +9,7 @@ define(function() {
 				'_csrf': $('#csrf-token').val()
 			};
 
-			$('#login').attr('disabled', 'disabled').html('Logging in...');
+			$('#login').attr('disabled', 'disabled').html('登录中...');
 			$('#login-error-notify').hide();
 
 			$.ajax({
@@ -22,7 +22,7 @@ define(function() {
 						$('#login-error-notify').show();
 						$('#login').removeAttr('disabled').html('Login');
 					} else {
-						$('#login').html('Redirecting...');
+						$('#login').html('嗖...');
 						if(!app.previousUrl) {
 							app.previousUrl = '/';
 						}

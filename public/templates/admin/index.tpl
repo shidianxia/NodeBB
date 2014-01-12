@@ -3,7 +3,7 @@
 	<h1>欢迎回来，管理员</h1>
 	<br />
 	<p>
-		<a target="_blank" href="http://www.nodebb.org" class="btn btn-default btn-lg"><i class="fa fa-comment"></i> NodeBB 官方论坛</a>
+		<a target="_blank" href="http://www.nodebb.org" class="btn btn-default btn-lg"><i class="fa fa-comment"></i> NodeBB</a>
 		<a target="_blank" href="http://www.nodebb.org" class="btn btn-default btn-lg"><i class="fa fa-github-alt"></i> 获取插件</a>
 		<a target="_blank" href="http://www.nodebb.org" class="btn btn-default btn-lg"><i class="fa fa-github-alt"></i> 获取主题</a>
 		<a target="_blank" href="http://www.nodebb.org" class="btn btn-default btn-lg"><i class="fa fa-twitter"></i> dcplabs</a>

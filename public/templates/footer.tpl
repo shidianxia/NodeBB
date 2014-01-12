@@ -44,7 +44,7 @@
 	<footer id="footer" class="container footer hide">
 		{footerHTML}
 		<div class="copyright">
-			Copyright &copy; 2014 为一些不同的人群留下一片净土 <a target="_blank" href="//github.com/designcreateplay/NodeBB/graphs/contributors">本站基于 NodeBB 开发</a>
+			Copyright &copy; 2014 <strong>后城</strong> 一群人，不孤单
 		</div>
 	</footer>
 

@@ -170,13 +170,13 @@ var fs = require('fs'),
 		},
 		parseFragment: function (urlFragment, callback) {
 			if (urlFragment === '') {
-				callback(null, 'Index');
+				callback(null, '首页');
 			} else if (urlFragment === 'recent') {
-				callback(null, 'Recent Topics');
+				callback(null, '最新话题');
 			} else if (urlFragment === 'unread') {
-				callback(null, 'Unread Topics');
+				callback(null, '未读话题');
 			} else if (urlFragment === 'users') {
-				callback(null, 'Registered Users');
+				callback(null, '成员');
 			} else if (/^category\/\d+\/?/.test(urlFragment)) {
 				var cid = urlFragment.match(/category\/(\d+)/)[1];
 

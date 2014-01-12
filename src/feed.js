@@ -124,8 +124,8 @@
 	Feed.updateRecent = function(callback) {
 		topics.getLatestTopics(0, 0, 19, undefined, function (err, recentData) {
 			var	feed = new rss({
-					title: 'Recently Active Topics',
-					description: 'A list of topics that have been active within the past 24 hours',
+					title: '最近活跃的话题',
+					description: '最近24小时内活跃的话题',
 					feed_url: Feed.defaults.baseUrl + '/recent.rss',
 					site_url: nconf.get('url') + 'recent',
 					ttl: Feed.defaults.ttl

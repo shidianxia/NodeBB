@@ -10,8 +10,8 @@ define(['taskbar'], function(taskbar) {
 				type: 'danger',
 				timeout: 5000,
 				alert_id: 'post_error',
-				title: 'Please Log In to Post',
-				message: 'Posting is currently restricted to registered members only, click here to log in',
+				title: '请登录',
+				message: '您还未登录不能发贴，请登录或注册。',
 				clickfn: function() {
 					ajaxify.go('login');
 				}
