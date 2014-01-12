@@ -151,16 +151,16 @@ define(['composer'], function(composer) {
 											app.alert({
 												'alert_id': 'thread_move',
 												type: 'success',
-												title: 'Topic Successfully Moved',
-												message: 'This topic has been successfully moved to ' + targetCatLabel,
+												title: '话题移动成功',
+												message: '此话题已经成功移动到节点：' + targetCatLabel,
 												timeout: 5000
 											});
 										} else {
 											app.alert({
 												'alert_id': 'thread_move',
 												type: 'danger',
-												title: 'Unable to Move Topic',
-												message: 'This topic could not be moved to ' + targetCatLabel + '.<br />Please try again later',
+												title: '无法移动话题',
+												message: '此话题无法移动到： ' + targetCatLabel + '.<br />请确认是否有操作。',
 												timeout: 5000
 											});
 										}
@@ -279,8 +279,8 @@ define(['composer'], function(composer) {
 							app.alert({
 								alert_id: 'topic_follow',
 								timeout: 2500,
-								title: 'Following Topic',
-								message: 'You will now be receiving notifications when somebody posts to this topic.',
+								title: '已关注帖子',
+								message: '您将会随时收到帖子的最新进展。',
 								type: 'success'
 							});
 						}
@@ -291,8 +291,8 @@ define(['composer'], function(composer) {
 							app.alert({
 								alert_id: 'topic_follow',
 								timeout: 2500,
-								title: 'Not Following Topic',
-								message: 'You will no longer receive notifications from this topic.',
+								title: '已取消关注帖子',
+								message: '不再提醒您关于本帖子的最新进展。',
 								type: 'success'
 							});
 						}
@@ -307,8 +307,8 @@ define(['composer'], function(composer) {
 					app.alert({
 						type: 'danger',
 						alert_id: 'topic_follow',
-						title: 'Please Log In',
-						message: 'Please register or log in in order to subscribe to this topic',
+						title: '请先登录',
+						message: '登录后您才能关注帖子。',
 						timeout: 5000
 					});
 				}
@@ -769,8 +769,8 @@ define(['composer'], function(composer) {
 					app.alert({
 						'alert_id': 'thread_lock',
 						type: 'success',
-						title: 'Thread Locked',
-						message: 'Thread has been successfully locked',
+						title: '帖子已被锁定',
+						message: '帖子已经成功锁定了。',
 						timeout: 5000
 					});
 				}
@@ -791,8 +791,8 @@ define(['composer'], function(composer) {
 					app.alert({
 						'alert_id': 'thread_lock',
 						type: 'success',
-						title: 'Thread Unlocked',
-						message: 'Thread has been successfully unlocked',
+						title: '帖子已解锁',
+						message: '解锁后帖子可以继续更新。',
 						timeout: 5000
 					});
 				}
@@ -837,8 +837,8 @@ define(['composer'], function(composer) {
 					app.alert({
 						'alert_id': 'thread_pin',
 						type: 'success',
-						title: 'Thread Pinned',
-						message: 'Thread has been successfully pinned',
+						title: '帖子成功钉上',
+						message: '帖子已经成功被钉上。',
 						timeout: 5000
 					});
 				}
@@ -850,8 +850,8 @@ define(['composer'], function(composer) {
 					app.alert({
 						'alert_id': 'thread_pin',
 						type: 'success',
-						title: 'Thread Unpinned',
-						message: 'Thread has been successfully unpinned',
+						title: '帖子不再钉上',
+						message: '帖子成功解除钉上状态。',
 						timeout: 5000
 					});
 				}
