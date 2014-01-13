@@ -592,11 +592,11 @@ define(['composer'], function(composer) {
 
 					var title = '';
 					if(remainingUsers && anonymousCount)
-						title = remainingUsers + ' more user(s) and ' + anonymousCount + ' guest(s)';
+						title = remainingUsers + ' 等成员和 ' + anonymousCount + ' 位游客';
 					else if(remainingUsers)
-						title = remainingUsers + ' more user(s)';
+						title = remainingUsers + ' 等成员';
 					else
-						title = anonymousCount + ' guest(s)';
+						title = anonymousCount + ' 位游客';
 
 					anonLink.tooltip({
 						placement: 'top',
