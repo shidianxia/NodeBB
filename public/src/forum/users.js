@@ -53,7 +53,7 @@ define(function() {
 						}
 
 						if (!data) {
-							$('#user-notfound-notify').html('You need to be logged in to search!');
+							$('#user-notfound-notify').html('您必须登录后才能使用搜索功能！');
 							$('#user-notfound-notify').parent().addClass('btn-warning label-warning');
 							return;
 						}
@@ -67,10 +67,10 @@ define(function() {
 
 
 						if (data && data.length === 0) {
-							$('#user-notfound-notify').html('User not found!');
+							$('#user-notfound-notify').html('找不到您搜索的成员');
 							$('#user-notfound-notify').parent().addClass('btn-warning label-warning');
 						} else {
-							$('#user-notfound-notify').html(data.length + ' user' + (data.length > 1 ? 's' : '') + ' found!');
+							$('#user-notfound-notify').html('找到 ' + data.length + ' 个成员' + (data.length > 1 ? 's' : ''));
 							$('#user-notfound-notify').parent().addClass('btn-success label-success');
 						}
 
