@@ -52,7 +52,7 @@
         minutes: "%d 分钟",
         hour: "大约一小时",
         hours: "大约 %d 小时",
-        day: "一天前",
+        day: "一天",
         days: "%d 天",
         month: "大约一个月",
         months: "%d 个月",
