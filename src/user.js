@@ -366,7 +366,7 @@ var bcrypt = require('bcrypt'),
 					});
 				} else {
 					callback({
-						error: 'Your current password is not correct!'
+						error: '您当前密码输入有误！'
 					});
 				}
 			});
@@ -642,7 +642,7 @@ var bcrypt = require('bcrypt'),
 		User.getUserField(uid, 'username', function(err, username) {
 			db.getSetMembers('followers:' + uid, function(err, followers) {
 				topics.getTopicField(tid, 'slug', function(err, slug) {
-					var message = '<strong>' + username + '</strong> made a new post';
+					var message = '<strong>' + username + '</strong> 发布了一个新帖子';
 
 					notifications.create(message, nconf.get('relative_path') + '/topic/' + slug + '#' + pid, 'topic:' + tid, function(nid) {
 						notifications.push(nid, followers);

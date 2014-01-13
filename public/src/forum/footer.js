@@ -173,8 +173,8 @@
 		notifIcon.toggleClass('active', true);
 		app.alert({
 			alert_id: 'new_notif',
-			title: 'New notification',
-			message: 'You have unread notifications.',
+			title: '新提醒',
+			message: '您有一个未读的新提醒',
 			type: 'warning',
 			timeout: 2000
 		});
@@ -238,12 +238,12 @@
 				}
 
 				if (!modal.is(":visible") || !app.isFocused) {
-					app.alternatingTitle(data.username + ' has messaged you');
+					app.alternatingTitle(data.username + ' 给您发了信息');
 				}
 			} else {
 				chat.createModal(data.username, data.fromuid, function(modal) {
 					chat.toggleNew(modal.attr('UUID'), true);
-					app.alternatingTitle(data.username + ' has messaged you');
+					app.alternatingTitle(data.username + ' 给您发了信息');
 				});
 			}
 		});

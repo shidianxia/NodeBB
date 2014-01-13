@@ -196,7 +196,7 @@ define(['taskbar'], function(taskbar) {
 						break;
 					case 'discard':
 						if (composer.posts[post_uuid].modified) {
-							bootbox.confirm('Are you sure you wish to discard this post?', function(discard) {
+							bootbox.confirm('您确定不想发布这个帖子了吗？', function(discard) {
 								if (discard) {
 									composer.discard(post_uuid);
 								}
@@ -227,7 +227,7 @@ define(['taskbar'], function(taskbar) {
 					case 'fa fa-bold':
 						if (selectionStart === selectionEnd) {
 							// Nothing selected
-							insertIntoInput(postContentEl, "**bolded text**");
+							insertIntoInput(postContentEl, "**用两个星号包裹需要加粗的文字**");
 						} else {
 							// Text selected
 							postContentEl.val(postContentEl.val().slice(0, selectionStart) + '**' + postContentEl.val().slice(selectionStart, selectionEnd) + '**' + postContentEl.val().slice(selectionEnd));
@@ -238,7 +238,7 @@ define(['taskbar'], function(taskbar) {
 					case 'fa fa-italic':
 						if (selectionStart === selectionEnd) {
 							// Nothing selected
-							insertIntoInput(postContentEl, "*italicised text*");
+							insertIntoInput(postContentEl, "*用单个星号包裹需要倾斜的文字*");
 						} else {
 							// Text selected
 							postContentEl.val(postContentEl.val().slice(0, selectionStart) + '*' + postContentEl.val().slice(selectionStart, selectionEnd) + '*' + postContentEl.val().slice(selectionEnd));
@@ -248,12 +248,12 @@ define(['taskbar'], function(taskbar) {
 					break;
 					case 'fa fa-list':
 						// Nothing selected
-						insertIntoInput(postContentEl, "\n\n* list item");
+						insertIntoInput(postContentEl, "\n\n* 单个星号开头可以用来表示项目符号");
 					break;
 					case 'fa fa-link':
 						if (selectionStart === selectionEnd) {
 							// Nothing selected
-							insertIntoInput(postContentEl, "[link text](link url)");
+							insertIntoInput(postContentEl, "[输入链接显示的文字](这里输入链接地址)");
 						} else {
 							// Text selected
 							postContentEl.val(postContentEl.val().slice(0, selectionStart) + '[' + postContentEl.val().slice(selectionStart, selectionEnd) + '](link url)' + postContentEl.val().slice(selectionEnd));
@@ -419,13 +419,13 @@ define(['taskbar'], function(taskbar) {
 		bodyEl.val(bodyEl.val().trim());
 
 		if(postData.uploadsInProgress && postData.uploadsInProgress.length) {
-			return composerAlert('Still uploading', 'Please wait for uploads to complete.');
+			return composerAlert('还在上传', '请等待上传完成');
 		} else if (titleEl.val().length < parseInt(config.minimumTitleLength, 10)) {
-			return composerAlert('Title too short', 'Please enter a longer title. At least ' + config.minimumTitleLength+ ' characters.');
+			return composerAlert('标题太短了', '请输入至少 ' + config.minimumTitleLength+ ' 个文字');
 		} else if (titleEl.val().length > parseInt(config.maximumTitleLength, 10)) {
-			return composerAlert('Title too long', 'Please enter a shorter title. Titles can\'t be longer than ' + config.maximumTitleLength + ' characters.');
+			return composerAlert('标题太长了', '标题不能超过 ' + config.maximumTitleLength + ' 个文字');
 		} else if (bodyEl.val().length < parseInt(config.minimumPostLength, 10)) {
-			return composerAlert('Content too short', 'Please enter a longer post. At least ' + config.minimumPostLength + ' characters.');
+			return composerAlert('帖子内容太短了', '为了防止无意义的内容，请至少输入 ' + config.minimumPostLength + ' 个文字');
 		}
 
 		// Still here? Let's post.
@@ -555,7 +555,7 @@ define(['taskbar'], function(taskbar) {
 				uploadFile('api:posts.uploadImage', post_uuid, fileData);
 			} else {
 				if(file.size > parseInt(config.maximumFileSize, 10) * 1024) {
-					return composerAlert('File too big', 'Maximum allowed file size is ' + config.maximumFileSize + 'kbs');
+					return composerAlert('文件太大了', '最大允许上传 ' + config.maximumFileSize + 'kb 的文件');
 				}
 				uploadFile('api:posts.uploadFile', post_uuid, fileData);
 			}
