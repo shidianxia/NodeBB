@@ -26,20 +26,20 @@
 						</a>
 						<small>
 							<span class="topic-stats">
-								posts
 								<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
+								个回复
 							</span>
 							|
 							<span class="topic-stats">
-								views
 								<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
+								次浏览
 							</span>
 							|
 							<span>
 								<a href="{relative_path}/user/{topics.userslug}">
 									<img class="teaser-pic" src="{topics.picture}" title="{topics.username}"/>
 								</a>
-								posted in
+								发布于
 								<a href="{relative_path}/category/{topics.categorySlug}">
 									<i class="fa {topics.categoryIcon}"></i> {topics.categoryName}
 								</a>
@@ -49,13 +49,13 @@
 
 							<span class="pull-right hidden-xs">
 								<!-- IF topics.unreplied -->
-								No one has replied
+								还没有人回复
 								<!-- ELSE -->
 								<a href="{relative_path}/user/{topics.teaser_userslug}">
 									<img class="teaser-pic" src="{topics.teaser_userpicture}" title="{topics.teaser_username}"/>
 								</a>
 								<a href="{relative_path}/topic/{topics.slug}#{topics.teaser_pid}">
-									replied
+									回复于
 								</a>
 								<span class="timeago" title="{topics.teaser_timestamp}"></span>
 								<!-- ENDIF topics.unreplied -->
