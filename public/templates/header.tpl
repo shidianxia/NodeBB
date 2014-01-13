@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>{browserTitle}</title>
+	<title>{browserTitle} 一群人，不孤单</title>
 	{meta_tags}
 	<link rel="icon" type="image/x-icon" href="{brand:favicon}" />
 	<link href="{cssSrc}" rel="stylesheet" media="screen">
