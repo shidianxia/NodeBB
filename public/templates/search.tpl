@@ -18,7 +18,7 @@
 		<h3>[[topic:topics]]</h3>
 
 		<!-- IF topic_matches -->
-		<small>{topic_matches} result(s) matching "{search_query}"</small>
+		<small>{topic_matches} 个结果与 "{search_query}" 相关</small>
 		<!-- ENDIF topic_matches -->
 		<div class="alert alert-info {show_no_topics}">[[topic:no_topics_found]]</div>
 
@@ -41,9 +41,9 @@
 			<!-- END topics -->
 		</ul>
 
-		<h3>Posts</h3>
+		<h3>帖子</h3>
 		<!-- IF post_matches -->
-		<small>{post_matches} result(s) matching "{search_query}"</small>
+		<small>{post_matches} 个结果与 "{search_query}" 相关</small>
 		<!-- ENDIF post_matches -->
 		<div class="alert alert-info {show_no_posts}">没有找到任何帖子。</div>
 
