@@ -440,7 +440,7 @@ define(['composer'], function(composer) {
 			var pid = $(this).parents('li').attr('data-pid'),
 				postEl = $(document.querySelector('#post-container li[data-pid="' + pid + '"]')),
 				deleteAction = !postEl.hasClass('deleted') ? true : false,
-				confirmDel = confirm((deleteAction ? 'Delete' : 'Restore') + ' this post?');
+				confirmDel = confirm((deleteAction ? '删除' : '恢复') + ' 这个帖子吗？');
 
 			if (confirmDel) {
 				if(deleteAction) {
@@ -449,7 +449,7 @@ define(['composer'], function(composer) {
 						tid: tid
 					}, function(err) {
 						if(err) {
-							return app.alertError('Can\'t delete post!');
+							return app.alertError('无法删除帖子');
 						}
 					});
 				} else {
@@ -458,7 +458,7 @@ define(['composer'], function(composer) {
 						tid: tid
 					}, function(err) {
 						if(err) {
-							return app.alertError('Can\'t restore post!');
+							return app.alertError('无法恢复帖子');
 						}
 					});
 				}

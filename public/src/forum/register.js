@@ -40,7 +40,7 @@ define(function() {
 			}
 
 			if (!utils.isEmailValid(emailEl.val())) {
-				showError(email_notify, 'Invalid email address.');
+				showError(email_notify, '邮件地址格式错误');
 			} else {
 				socket.emit('user.email.exists', {
 					email: emailEl.val()
@@ -59,11 +59,11 @@ define(function() {
 			}
 
 			if (username.val().length < config.minimumUsernameLength) {
-				showError(username_notify, 'Username too short!');
+				showError(username_notify, '用户名太短了');
 			} else if (username.val().length > config.maximumUsernameLength) {
-				showError(username_notify, 'Username too long!');
+				showError(username_notify, '用户名太长了');
 			} else if (!utils.isUserNameValid(username.val()) || !utils.slugify(username.val())) {
-				showError(username_notify, 'Invalid username!');
+				showError(username_notify, '无效的用户名');
 			} else {
 				socket.emit('user.exists', {
 					username: username.val()
@@ -85,15 +85,15 @@ define(function() {
 			}
 
 			if (password.val().length < config.minimumPasswordLength) {
-				showError(password_notify, 'Password too short!');
+				showError(password_notify, '密码太短');
 			} else if (!utils.isPasswordValid(password.val())) {
-				showError(password_notify, 'Invalid password!');
+				showError(password_notify, '无效的密码');
 			} else {
 				showSuccess(password_notify, successIcon);
 			}
 
 			if (password.val() !== password_confirm.val() && password_confirm.val() !== '') {
-				showError(password_confirm_notify, 'Passwords must match!');
+				showError(password_confirm_notify, '确认密码错误');
 			}
 		}
 
@@ -107,7 +107,7 @@ define(function() {
 			}
 
 			if (password.val() !== password_confirm.val()) {
-				showError(password_confirm_notify, 'Passwords must match!');
+				showError(password_confirm_notify, '确认密码错误');
 			} else {
 				showSuccess(password_confirm_notify, successIcon);
 			}
@@ -129,7 +129,7 @@ define(function() {
 
 		socket.on('user.email.exists', function(data) {
 			if (data.exists === true) {
-				showError(email_notify, 'Email address already taken!');
+				showError(email_notify, '邮件地址已被注册');
 			} else {
 				showSuccess(email_notify, successIcon);
 			}

@@ -32,20 +32,20 @@
 					</a>
 					<small>
 						<span class="topic-stats">
-							posts
 							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
+							个回复
 						</span>
 						|
 						<span class="topic-stats">
-							views
 							<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
+							次浏览
 						</span>
 						|
 						<span>
 							<a href="{relative_path}/user/{topics.userslug}">
 								<img class="teaser-pic" src="{topics.picture}" title="{topics.username}"/>
 							</a>
-							posted in
+							发布在
 							<a href="{relative_path}/category/{topics.categorySlug}">
 								<i class="fa {topics.categoryIcon}"></i> {topics.categoryName}
 							</a>

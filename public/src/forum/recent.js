@@ -62,20 +62,20 @@ define(function() {
 		var text = '';
 
 		if (Recent.newTopicCount > 1)
-			text = 'There are ' + Recent.newTopicCount + ' new topics';
+			text = '现有 ' + Recent.newTopicCount + ' 个新话题';
 		else if (Recent.newTopicCount === 1)
-			text = 'There is 1 new topic';
+			text = '现有 1 个新话题';
 		else
-			text = 'There are no new topics';
+			text = '没有新话题';
 
 		if (Recent.newPostCount > 1)
-			text += ' and ' + Recent.newPostCount + ' new posts.';
+			text += ' 和 ' + Recent.newPostCount + ' 个新帖子';
 		else if (Recent.newPostCount === 1)
-			text += ' and 1 new post.';
+			text += ' 和 1 个新帖子';
 		else
-			text += ' and no new posts.';
+			text += ' 没有新帖子';
 
-		text += ' Click here to reload.';
+		text += ' 点击重新加载';
 
 		$('#new-topics-alert').html(text).removeClass('hide').fadeIn('slow');
 	}
