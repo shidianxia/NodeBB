@@ -1,36 +1,44 @@
-@keyframes move {
-    to { left: 50%; }
-}
-
-@keyframes cover {
-    from,49.9% { z-index: 1 }
-    50.1%, to { z-index: 0 }
-}
-
 .spinner {
-    width: 2em;
-    height: 1em;
-    position: relative;
-    margin: 20% auto;
-}
-
-.spinner:before,
-.spinner:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 50%;
-    height: 100%;
+    border: 3px solid #ccc;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    animation: cover 2s infinite reverse,
-    move 1s infinite alternate;
+    -webkit-animation: spinner 1s infinite linear;
+    -moz-animation: spinner 1s infinite linear;
+    -o-animation: spinner 1s infinite linear;
+    animation: spinner 1s infinite linear;
 }
-
-.spinner:before {
-    background: #0063dc;
-    animation-direction: normal, alternate-reverse;
+@-webkit-keyframes spinner {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
-
-.spinner:after {
-    background: #ff0084;
+@-moz-keyframes spinner {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-o-keyframes spinner {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
