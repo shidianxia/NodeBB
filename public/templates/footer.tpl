@@ -1,7 +1,7 @@
 
 
 	</div><!--END container -->
-
+    <div class="spinner"></div>
 	<div id="upload-picture-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Upload Picture" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -51,6 +51,6 @@
 	<script>
 		require(['forum/footer']);
 	</script>
-
+	<link rel="stylesheet" href="{relative_path}/vendor/custom/spinner.css">
 </body>
 </html>
