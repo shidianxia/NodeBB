@@ -5,7 +5,7 @@
 	{meta_tags}
 	<link rel="icon" type="image/x-icon" href="{brand:favicon}" />
 	<link href="{cssSrc}" rel="stylesheet" media="screen">
-	<link rel="stylesheet" href="{relative_path}/vendor/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.0.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{relative_path}/css/theme.css?{cache-buster}" />
 	{link_tags}
 	<!-- BEGIN pluginCSS -->
@@ -14,7 +14,7 @@
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
 	</script>
-	<script src="{relative_path}/socket.io/socket.io.js"></script>
+	<script src="//cdn.bootcss.com/socket.io/0.9.16/socket.io.min.js"></script>
 	<!-- BEGIN clientScripts -->
 	<script src="{relative_path}/{clientScripts.script}"></script>
 	<!-- END clientScripts -->

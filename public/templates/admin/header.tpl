@@ -6,22 +6,22 @@
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
 	</script>
-	<link id="base-theme" href="//lib.sinaapp.com/js/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link rel="stylesheet" href="{relative_path}/vendor/fontawesome/css/font-awesome.min.css">
-	<script type="text/javascript" src="//lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="//lib.sinaapp.com/js/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="//lib.sinaapp.com/js/qunit/1.11/qunit.js"></script>
-	<link rel="stylesheet" type="text/css" href="//lib.sinaapp.com/js/qunit/1.11/qunit.css">
+	<link id="base-theme" href="//cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//cdn.bootcss.com/qunit/1.12.0/qunit.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/qunit/1.12.0/qunit.min.css">
 	<link rel="stylesheet" type="text/css" href="{relative_path}/vendor/colorpicker/colorpicker.css">
-	<script type="text/javascript" src="{relative_path}/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="//cdn.bootcss.com/socket.io/0.9.16/socket.io.min.js"></script>
 	<script type="text/javascript" src="{relative_path}/src/app.js"></script>
 	<script type="text/javascript" src="{relative_path}/src/templates.js"></script>
 	<script type="text/javascript" src="{relative_path}/src/translator.js"></script>
 	<script type="text/javascript" src="{relative_path}/src/ajaxify.js"></script>
 	<script src="{relative_path}/vendor/jquery/js/jquery.timeago.js"></script>
-	<script src="{relative_path}/vendor/jquery/js/jquery.form.js"></script>
-	<script src="{relative_path}/vendor/requirejs/require.js"></script>
-	<script src="{relative_path}/vendor/bootbox/bootbox.min.js"></script>
+	<script src="//cdn.bootcss.com/jquery.form/3.46/jquery.form.min.js"></script>
+	<script src="//cdn.bootcss.com/require.js/2.1.10/require.min.js"></script>
+	<script src="//cdn.bootcss.com/bootbox.js/4.0.0/bootbox.min.js"></script>
 	<script src="{relative_path}/vendor/colorpicker/colorpicker.js"></script>
 
 	<script>
@@ -34,7 +34,7 @@
 		});
 	</script>
 	<link rel="stylesheet" type="text/css" href="//lib.sinaapp.com/js/jquery-ui/1.10.2/themes/smoothness/jquery-ui.min.css">
-	<script type="text/javascript" src="//lib.sinaapp.com/js/jquery-ui/1.10.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="//cdn.bootcss.com/jqueryui/1.10.2/jquery-ui.min.js"></script>
 	<script src="{relative_path}/src/utils.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="{relative_path}/css/theme.css" />
