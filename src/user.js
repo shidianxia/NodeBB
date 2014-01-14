@@ -843,7 +843,7 @@ var bcrypt = require('bcrypt'),
 						'site_title': (meta.config['title'] || 'NodeBB'),
 						'reset_link': reset_link,
 
-						subject: 'Password Reset Requested - ' + (meta.config['title'] || 'NodeBB') + '!',
+						subject: '˙重置密码 - ' + (meta.config['title'] || 'NodeBB') + '!',
 						template: 'reset',
 						uid: uid
 					});
@@ -920,7 +920,7 @@ var bcrypt = require('bcrypt'),
 						username: username,
 						'confirm_link': confirm_link,
 
-						subject: 'Welcome to ' + (meta.config['title'] || 'NodeBB') + '!',
+						subject: '欢迎加入 ' + (meta.config['title'] || 'NodeBB') + '!',
 						template: 'welcome',
 						uid: uid
 					});
