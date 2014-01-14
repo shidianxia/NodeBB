@@ -1,44 +1,31 @@
 .spinner {
-    border: 3px solid #ccc;
-    border-right: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    -webkit-animation: spinner 1s infinite linear;
-    -moz-animation: spinner 1s infinite linear;
-    -o-animation: spinner 1s infinite linear;
-    animation: spinner 1s infinite linear;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%;
+    margin-left: -20px;
+    background-color: #333;
+
+    border-radius: 100%;
+    -webkit-animation: scaleout 1.0s infinite ease-in-out;
+    animation: scaleout 1.0s infinite ease-in-out;
 }
-@-webkit-keyframes spinner {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-}
-@-moz-keyframes spinner {
-    from {
-        -moz-transform: rotate(0deg);
-    }
-    to {
-        -moz-transform: rotate(360deg);
+
+@-webkit-keyframes scaleout {
+    0% { -webkit-transform: scale(0.0) }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
     }
 }
-@-o-keyframes spinner {
-    from {
-        -o-transform: rotate(0deg);
-    }
-    to {
-        -o-transform: rotate(360deg);
-    }
-}
-@keyframes spinner {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+
+@keyframes scaleout {
+    0% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 100% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+          opacity: 0;
+      }
 }
