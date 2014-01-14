@@ -10,6 +10,7 @@
     border-radius: 100%;
     -webkit-animation: scaleout 1.0s infinite ease-in-out;
     animation: scaleout 1.0s infinite ease-in-out;
+    z-index: -100;
 }
 
 @-webkit-keyframes scaleout {
