@@ -39,8 +39,9 @@
     padding: 0 0 60px;
 }
 
-#wrap > .container {
+#wrap > #content {
     padding: 73px 0 0 0;
+    background: #fff;
 }
 
 #footer {
