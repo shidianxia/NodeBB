@@ -41,7 +41,7 @@
 	<div id="alert_window"></div>
 
     </div>
-	<footer id="footer" class="container footer hide">
+	<footer id="footer" class="hide">
 		{footerHTML}
 		<div class="copyright">
 			Copyright &copy; 2014 <strong>后城</strong> 一群人，不孤单
