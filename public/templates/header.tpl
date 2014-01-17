@@ -10,6 +10,7 @@
 	{link_tags}
 	<!-- BEGIN pluginCSS -->
 	<link rel="stylesheet" href="{pluginCSS.path}">
+	<link rel="stylesheet" href="{relative_path}/vendor/custom/addon.css">
 	<!-- END pluginCSS -->
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
@@ -34,6 +35,7 @@
 </head>
 
 <body>
+    <div id="wrap">
 	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation" id="header-menu">
 		<div class="container">
 			<div class="navbar-header">

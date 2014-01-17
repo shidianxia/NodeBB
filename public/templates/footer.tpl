@@ -40,7 +40,7 @@
 
 	<div id="alert_window"></div>
 
-
+    </div>
 	<footer id="footer" class="container footer hide">
 		{footerHTML}
 		<div class="copyright">
@@ -51,6 +51,5 @@
 	<script>
 		require(['forum/footer']);
 	</script>
-	<link rel="stylesheet" href="{relative_path}/vendor/custom/spinner.css">
 </body>
 </html>
