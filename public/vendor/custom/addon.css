@@ -42,6 +42,7 @@
 #wrap > #content {
     padding: 73px 0 0 0;
     background: #fff;
+    min-height: 70%;
 }
 
 #footer {
