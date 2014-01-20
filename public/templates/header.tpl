@@ -7,10 +7,10 @@
 	<link href="{cssSrc}" rel="stylesheet" media="screen">
 	<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.0.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{relative_path}/css/theme.css?{cache-buster}" />
+	<link rel="stylesheet" href="{relative_path}/vendor/custom/addon.css">
 	{link_tags}
 	<!-- BEGIN pluginCSS -->
 	<link rel="stylesheet" href="{pluginCSS.path}">
-	<link rel="stylesheet" href="{relative_path}/vendor/custom/addon.css">
 	<!-- END pluginCSS -->
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
