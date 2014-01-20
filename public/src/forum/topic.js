@@ -755,7 +755,7 @@ define(['composer'], function(composer) {
 				x;
 
 			if (locked === true) {
-				lockThreadEl.html('<i class="fa fa-unlock"></i> Unlock Thread');
+				lockThreadEl.html('<i class="fa fa-unlock"></i> 解锁帖子');
 				threadReplyBtn.attr('disabled', true);
 				threadReplyBtn.html('Locked <i class="fa fa-lock"></i>');
 				for (x = 0; x < numPosts; x++) {
@@ -777,7 +777,7 @@ define(['composer'], function(composer) {
 
 				thread_state.locked = '1';
 			} else {
-				lockThreadEl.html('<i class="fa fa-lock"></i> Lock Thread');
+				lockThreadEl.html('<i class="fa fa-lock"></i> 锁定帖子');
 				threadReplyBtn.attr('disabled', false);
 				threadReplyBtn.html('Reply');
 				for (x = 0; x < numPosts; x++) {
@@ -809,18 +809,18 @@ define(['composer'], function(composer) {
 				deleteNotice = document.getElementById('thread-deleted') || document.createElement('div');
 
 			if (deleted) {
-				deleteTextEl.html('<i class="fa fa-comment"></i> Restore Thread');
+				deleteTextEl.html('<i class="fa fa-comment"></i> 恢复帖子');
 				threadEl.addClass('deleted');
 
 				// Spawn a 'deleted' notice at the top of the page
 				deleteNotice.setAttribute('id', 'thread-deleted');
 				deleteNotice.className = 'alert alert-warning';
-				deleteNotice.innerHTML = 'This thread has been deleted. Only users with thread management privileges can see it.';
+				deleteNotice.innerHTML = '这个帖子已经被删除，只有帖子作者和管理员才能查看。';
 				threadEl.before(deleteNotice);
 
 				thread_state.deleted = '1';
 			} else {
-				deleteTextEl.html('<i class="fa fa-trash-o"></i> Delete Thread');
+				deleteTextEl.html('<i class="fa fa-trash-o"></i> 删除帖子');
 				threadEl.removeClass('deleted');
 				deleteNotice.parentNode.removeChild(deleteNotice);
 
@@ -832,7 +832,7 @@ define(['composer'], function(composer) {
 			var pinEl = $('.pin_thread');
 
 			if (pinned) {
-				pinEl.html('<i class="fa fa-thumb-tack"></i> Unpin Thread');
+				pinEl.html('<i class="fa fa-thumb-tack"></i> 不钉住帖子');
 				if (alert) {
 					app.alert({
 						'alert_id': 'thread_pin',
@@ -845,7 +845,7 @@ define(['composer'], function(composer) {
 
 				thread_state.pinned = '1';
 			} else {
-				pinEl.html('<i class="fa fa-thumb-tack"></i> Pin Thread');
+				pinEl.html('<i class="fa fa-thumb-tack"></i> 钉住帖子');
 				if (alert) {
 					app.alert({
 						'alert_id': 'thread_pin',
