@@ -34,7 +34,7 @@
 	<link rel="stylesheet" type="text/css" href="//lib.sinaapp.com/js/jquery-ui/1.10.2/themes/smoothness/jquery-ui.min.css">
 </head>
 
-<body style="padding:0;margin:0">
+<body>
     <div id="wrap">
 	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation" id="header-menu">
 		<div class="container">
