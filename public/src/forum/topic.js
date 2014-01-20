@@ -757,9 +757,9 @@ define(['composer'], function(composer) {
 			if (locked === true) {
 				lockThreadEl.html('<i class="fa fa-unlock"></i> 解锁帖子');
 				threadReplyBtn.attr('disabled', true);
-				threadReplyBtn.html('Locked <i class="fa fa-lock"></i>');
+				threadReplyBtn.html('已锁定 <i class="fa fa-lock"></i>');
 				for (x = 0; x < numPosts; x++) {
-					postReplyBtns[x].innerHTML = 'Locked <i class="fa fa-lock"></i>';
+					postReplyBtns[x].innerHTML = '已锁定 <i class="fa fa-lock"></i>';
 					quoteBtns[x].style.display = 'none';
 					editBtns[x].style.display = 'none';
 					deleteBtns[x].style.display = 'none';
