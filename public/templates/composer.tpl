@@ -21,7 +21,6 @@
 
 		<ul class="nav nav-tabs">
 			<li class="active"><a data-pane=".tab-write" data-toggle="tab">编辑</a></li>
-			<li><a data-pane=".tab-preview" data-toggle="tab">预览</a></li>
 			<li class="btn-group pull-right action-bar">
 				<button class="btn btn-default" data-action="discard" tabIndex="5"><i class="fa fa-times"></i> 撤销</button>
 				<button data-action="post" class="btn btn-default btn-primary" tabIndex="3"><i class="fa fa-check"></i> 发布</button>
