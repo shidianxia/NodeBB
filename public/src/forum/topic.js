@@ -382,7 +382,7 @@ define(['composer'], function(composer) {
 
 					quoted = '> ' + data.post.replace(/\n/g, '\n> ') + '\n\n';
 
-					composer.newReply(tid, topic_name, username + ' said:\n' + quoted);
+					composer.newReply(tid, topic_name, username + ' 说：' + quoted);
 				});
 			}
 		});
